@@ -1,3 +1,9 @@
 [submodule "horde-glue"]
 	path = horde-glue
 	url = git@github.com:wrobel/horde-glue.git
+[submodule "tools/topgit"]
+	path = tools/topgit
+	url = git@github.com:wrobel/topgit.git
+[submodule "tools/pardalys"]
+	path = tools/pardalys
+	url = git@github.com:wrobel/pardalys.git
