@@ -1,0 +1,3 @@
+[submodule "horde-glue"]
+	path = horde-glue
+	url = git@github.com:wrobel/horde-glue.git
