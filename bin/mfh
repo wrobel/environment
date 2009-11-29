@@ -1,0 +1,25 @@
+#!/bin/sh
+
+while read data; do
+    INPUT="${INPUT} ${data}\n"
+done
+echo -e $INPUT
+if [ -z "${ENVIRONMENT}" ]; then
+    #from http://www.jtanium.com/2007/12/21/bash-get-current-script-name-and-relative-and-absolute-paths/
+    _my_name=`basename ${0}`
+    if [ "`echo ${0} | cut -c1`" = "/" ]; then
+	_my_path=`dirname ${0}`
+    else
+	if [ "`echo ${0} | cut -c1`" = "~" ]; then
+	    _my_path=${HOME}/`echo ${0} | sed -e s/${_my_name}//`
+	else
+	    _my_path=`pwd`/`echo ${0} | sed -e s/${_my_name}//`
+	fi
+    fi
+    ENVIRONMENT="${_my_path}/.."
+fi
+
+PHP_INI=${ENVIRONMENT}/horde-glue/php.ini
+MERGE_SCRIPT=${ENVIRONMENT}/horde-glue/horde-cvs/framework/devtools/horde-merge.php
+
+echo -e "${INPUT}" | sed -e 's#framework/##' | php -c ${PHP_INI} ${MERGE_SCRIPT} $@
