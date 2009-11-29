@@ -7,3 +7,6 @@
 [submodule "tools/pardalys"]
 	path = tools/pardalys
 	url = git@github.com:wrobel/pardalys.git
+[submodule "kolab/kolab-cvs"]
+	path = kolab/kolab-cvs
+	url = git@github.com:wrobel/kolab-cvs.git
