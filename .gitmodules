@@ -10,3 +10,6 @@
 [submodule "kolab/kolab-cvs"]
 	path = kolab/kolab-cvs
 	url = git@github.com:wrobel/kolab-cvs.git
+[submodule "latex/book-gentoo"]
+	path = latex/book-gentoo
+	url = git@github.com:wrobel/book-gentoo.git
