@@ -37,4 +37,6 @@
 
 (timed-load "97_env")
 
+(timed-load "98_personal")
+
 (timed-load "99_keys")

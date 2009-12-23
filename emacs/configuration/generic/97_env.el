@@ -35,7 +35,7 @@
 (prefer-coding-system 'utf-8)
 
 ;; Backups
-(setq backup-dir "~/.backup")
+(setq backup-dir "~/.backups")
 
 (unless (file-directory-p backup-dir)
   (make-directory backup-dir))
