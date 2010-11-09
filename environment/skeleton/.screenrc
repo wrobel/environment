@@ -36,9 +36,9 @@ bind -c selectHighs 7 select 17
 bind -c selectHighs 8 select 18 
 bind - command -c selectHighs
 
-bind -c taskWindow v screen -t 'e'       9 emacs
+bind -c taskWindow e screen -t 'e'       0 emacs
 bind -c taskWindow g screen -t 'Google' 10 elinks http://www.google.de
-bind -c taskWindow H screen -t 'www'    11 elinks
+bind -c taskWindow w screen -t 'www'    11 elinks
 bind -c taskWindow s screen -t 'su'     12 sudo su
 bind -c taskWindow n screen -t 'news'   13 newsbeuter
 bind , command -c taskWindow
