@@ -1,0 +1,70 @@
+###########################################################
+# Screen Konfiguration von Gunnar Wrobel <wrobel@pardus.de>
+#  (largely based on the one from
+#   Nico Golde <nico@ngolde.de>:
+#   http://nion.modprobe.de/setup/screenrc.html)
+#
+# http://www.gunnarwrobel.de
+# ~/.screenrc
+# Last change: 09.11.2010
+################################################
+
+# ===============================================================
+#       VARIABLES
+# ===============================================================
+
+nethack               on
+startup_message       off             # Standard: on
+vbell                 on
+defscrollback         1000            # Standard: 100
+activity              "activity in %n (%t) [%w:%s]~"
+bell                  "%C -> %n%f %t activity!"
+vbell_msg             " *Hello, hello, hello!!!* "
+
+# ===============================================================
+#       BINDINGS
+# ===============================================================
+
+bind -c selectHighs 0 select 10 #these three commands are 
+bind -c selectHighs 1 select 11 #added to the command-class
+bind -c selectHighs 2 select 12 #selectHighs
+bind -c selectHighs 3 select 13 
+bind -c selectHighs 4 select 14
+bind -c selectHighs 5 select 15 
+bind -c selectHighs 6 select 16 
+bind -c selectHighs 7 select 17 
+bind -c selectHighs 8 select 18 
+bind - command -c selectHighs
+
+bind -c taskWindow v screen -t 'e'       9 emacs
+bind -c taskWindow g screen -t 'Google' 10 elinks http://www.google.de
+bind -c taskWindow H screen -t 'www'    11 elinks
+bind -c taskWindow s screen -t 'su'     12 sudo su
+bind -c taskWindow n screen -t 'news'   13 newsbeuter
+bind , command -c taskWindow
+
+# ===============================================================
+#       TERMCAP and TERMINFO
+# ===============================================================
+
+
+#  termcapinfo xterm     ti@:te@
+#
+# Matthias Kopfermann <matthias_kopfermann@gmx.de> [020222]:
+# make the cursor show up in red:
+  termcapinfo xterm "ve=\E[?25h\E[?17;0;64c"
+
+  termcapinfo linux "ve=\E[?25h\E[?17;0;64c"
+#termcapinfo  xterm Z0=\E[?3h:Z1=\E[?3l:is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l
+
+# ===============================================================
+#       STATUS
+# ===============================================================
+
+#change the hardstatus settings to give an window list at the bottom of the
+#screen, with the time and date and with the current window highlighted
+hardstatus alwayslastline
+hardstatus string '%{= kK}%-Lw%{= KW}%50>%n%f* %t%{= kK}%+Lw%< %{= kG}%-=[%l] %D %d %M %c:%s%{-}'
+
+#hardstatus alwayslastline "%{+b kr}host: %{kw}%H%{kg} %c - %D %d.%m.%Y %{kr}(load: %l) %-26=%1`"
+
