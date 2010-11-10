@@ -5,5 +5,5 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (add-hook 'rcirc-mode-hook (lambda ()
+			     (rcirc-track-minor-mode 1)
 			     (flyspell-mode 1)))
-
