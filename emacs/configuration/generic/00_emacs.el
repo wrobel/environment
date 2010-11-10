@@ -35,6 +35,10 @@
 
 (timed-load "02_emacs")
 
+(timed-load "03_puppet")
+
+(timed-load "04_git")
+
 (timed-load "97_env")
 
 (timed-load "98_personal")
