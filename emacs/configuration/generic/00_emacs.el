@@ -41,6 +41,8 @@
 
 (timed-load "05_jabber")
 
+(timed-load "06_rcirc")
+
 (timed-load "97_env")
 
 (timed-load "98_personal")

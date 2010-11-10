@@ -16,6 +16,17 @@
  '(font-lock-function-name-face ((((class color) (min-colors 8)) (:foreground "yellow" :weight bold))))
  '(nxml-delimited-data-face ((((class color) (background light)) (:foreground "#7B7B3A")))))
 
+
+;; Change user info
+(setq rcirc-default-nick "wrobel")
+(setq rcirc-default-user-name "wrobel")
+(setq rcirc-default-full-name "Gunnar Wrobel")
+
+;; Join these channels at startup.
+(setq rcirc-startup-channels-alist
+      '(("\\.freenode\\.net$" "#kolab" "#horde-dev")))
+
+
 (setq secretfile (concat environment-path
 			 "/emacs/configuration/personal/"
 			 "100_secrets.el"))
