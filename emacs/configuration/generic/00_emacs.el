@@ -39,6 +39,8 @@
 
 (timed-load "04_git")
 
+(timed-load "05_jabber")
+
 (timed-load "97_env")
 
 (timed-load "98_personal")
