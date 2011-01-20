@@ -16,3 +16,6 @@
 [submodule "packaging/opensuse-build-service"]
 	path = packaging/opensuse-build-service
 	url = git@github.com:wrobel/opensuse-build-service.git
+[submodule "packaging/debian-horde-ci"]
+	path = packaging/debian-horde-ci
+	url = git@github.com:wrobel/debian-horde-ci
