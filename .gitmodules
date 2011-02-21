@@ -19,6 +19,6 @@
 [submodule "packaging/debian-horde-ci"]
 	path = packaging/debian-horde-ci
 	url = git@github.com:wrobel/debian-horde-ci
-[submodule "tools/hudson-install"]
-	path = tools/hudson-install
-	url = git@github.com:wrobel/hudson-install.git
+[submodule "tools/jenkins-install"]
+	path = tools/jenkins-install
+	url = git@github.com:wrobel/jenkins-install.git
