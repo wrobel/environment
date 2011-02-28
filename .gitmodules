@@ -22,3 +22,6 @@
 [submodule "tools/jenkins-install"]
 	path = tools/jenkins-install
 	url = git@github.com:wrobel/jenkins-install.git
+[submodule "packaging/kolab-horde-ci"]
+	path = packaging/kolab-horde-ci
+	url = git@github.com:wrobel/kolab-horde-ci
