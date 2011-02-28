@@ -25,3 +25,6 @@
 [submodule "packaging/kolab-horde-ci"]
 	path = packaging/kolab-horde-ci
 	url = git@github.com:wrobel/kolab-horde-ci
+[submodule "packaging/pear-horde-ci"]
+	path = packaging/pear-horde-ci
+	url = git@github.com:wrobel/pear-horde-ci.git
