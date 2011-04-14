@@ -1,0 +1,2 @@
+#Ensure emacs is always started on the command line.
+alias emacs="emacs -nw"
