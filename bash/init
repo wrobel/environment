@@ -2,4 +2,8 @@
 
 . ${ENVIRONMENT}/bash/debian-packaging
 
+. ${ENVIRONMENT}/bash/path
+
+. ${ENVIRONMENT}/bash/emacs
+
 
