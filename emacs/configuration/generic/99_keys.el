@@ -36,7 +36,7 @@
 (global-set-key (kbd "<f3> d") 'set-personal-variable-debug-on-error)
 
 ;; check for useless whitespace
-(global-set-key (kbd "<f3> w") 'whitespace-buffer)
+(global-set-key (kbd "<f3> w") 'whitespace-mode)
 (global-set-key (kbd "<f3> q") 'whitespace-cleanup)
 
 ;; Go to the next error in the compilation buffer

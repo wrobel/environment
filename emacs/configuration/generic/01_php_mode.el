@@ -49,6 +49,16 @@
                                  (inexpr-statement after)
                                  (inexpr-class-close before)))
   (setq fill-column 80)
+  (setq whitespace-line-column 200)
+  (setq whitespace-style '(tabs
+			   trailing
+			   lines
+			   space-before-tab
+			   space-before-tab::space
+			   space-after-tab::space
+			   indentation::space
+			   empty
+			   tab-mark))
   (run-hooks 'php-mode-pear-hook)
 )
 
@@ -91,7 +101,8 @@
   (add-hook 'php-mode-hook 'php-mode-zend-hook)
   (php-mode-horde-hook))
 
-(setq whitespace-modes (append '(php-mode) whitespace-modes))
+(if (boundp 'whitespace-modes)
+    (setq whitespace-modes (append '(php-mode) whitespace-modes)))
 
 (defun php-compile (arg)
   "Runs a compilation process with a number of PHP style checks."
