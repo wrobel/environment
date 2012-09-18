@@ -14,7 +14,9 @@
 ;; Highlighting preferences
 (custom-set-faces
  '(font-lock-function-name-face ((((class color) (min-colors 8)) (:foreground "yellow" :weight bold))))
- '(nxml-delimited-data-face ((((class color) (background light)) (:foreground "#7B7B3A")))))
+ '(nxml-delimited-data-face ((((class color) (background light)) (:foreground "#7B7B3A"))))
+ '(default ((t (:inherit nil :stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 97 :width normal :foundry "bitstream" :family "Bitstream Vera Sans Mono"))))
+)
 
 
 ;; Change user info
